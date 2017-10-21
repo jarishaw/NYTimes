@@ -1,9 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NYT class activity</title>
+    <title>NYT class activitygit</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
 
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="jumbotron">
+                <h1>New York Times Search</h1>
+                
+              </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-2">
+            </div>
+            
+            <div class="col-md-8">
+
+                <div class="panel panel-primary">
+
+                      <div class="panel-heading"><span class="glyphicon glyphicon-list-alt"></span>  Search</div>
+                      <div class="panel-body"></div>
+
+    
+                          <form action="/action_page.php">
+                              Search Term:<br>
+                            <input type="text" id="searchTerm">
+                            <br>Number of Records to Retrieve:<br>
+                            <input type="text" id="noOfRecords">
+                            <br>Start Year (Optional):<br>
+                            <input type="text" id="startYear"><br>
+                            <br>End Year (Optional):<br>
+                            <input type="text" id="endYear">
+                            <br>
+                            <br>
+
+                            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search
+                            </button>
+                            <button type="button"><span class="glyphicon glyphicon-trash"></span>  Clear Results</button>
+
+
+                        </form>
+                </div>
+                <div id="articles"></div>
+
+
+            </div>    
+            
+
+        </div>
+
+
+        
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/app.js"></script>
 </body>
 </html>
